@@ -61,8 +61,7 @@ async function sendEmail(email, userId, token) {
     })
     const authDetails = `${userId}/${token}`
     console.log(authDetails)
-    //https://localhost:8000/resetPassword/' + authDetails + '
-    //https://dont-recipe-frontback.herokuapp.com/resetPassword'
+
     const message = {
       from: `Dont Forget Your Recipe <${process.env.EMAIL_USER}>`,
       to: email,
