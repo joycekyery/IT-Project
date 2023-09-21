@@ -25,7 +25,7 @@ const googleLink =
   process.env.NODE_ENV === 'development' &&
   process.env.REACT_APP_TEST_MODE === 'ON'
     ? 'https://localhost:8000/google'
-    : 'https://dont-recipe-frontback.herokuapp.com/google'
+    : process.env.REACT_APP_BASE_URL
 export default function LoginPanel({
   onChange = () => {},
   onClose = () => {},
