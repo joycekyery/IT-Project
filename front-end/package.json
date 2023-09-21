@@ -48,7 +48,7 @@
     "webpack": "4"
   },
   "scripts": {
-    "set-env":"cp .env ./frontend",
+    "set-env":"pwd ; cp .env ./front-end",
     "herokuBuild": "yarn set-env && cross-env REACT_APP_TEST_MODE=OFF react-scripts build",
     "build": "cross-env REACT_APP_TEST_MODE=ON react-scripts build",
     "testBuild": "cross-env REACT_APP_TEST_MODE=OFF react-scripts build",
