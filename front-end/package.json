@@ -48,8 +48,7 @@
     "webpack": "4"
   },
   "scripts": {
-    "set-env":"cd .. ; pwd ; ls ; cp .env ./front-end/; cd /cd ./front-end/",
-    "herokuBuild": "yarn set-env && cross-env REACT_APP_TEST_MODE=OFF react-scripts build",
+    "herokuBuild": "cross-env REACT_APP_TEST_MODE=OFF react-scripts build",
     "build": "cross-env REACT_APP_TEST_MODE=ON react-scripts build",
     "testBuild": "cross-env REACT_APP_TEST_MODE=OFF react-scripts build",
     "start": "HTTPS=true SSL_CRT_FILE=../security/DontForgetUrRecipe.crt SSL_KEY_FILE=../security/DontForgetUrRecipe.key cross-env NODE_ENV=production REACT_APP_TEST_MODE=ON react-scripts start",
